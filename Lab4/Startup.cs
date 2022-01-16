@@ -29,7 +29,7 @@ namespace K_DLab4
             services.AddControllersWithViews();
 
             services.AddDbContext<K_DLab4Context>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString(K_DLab4)));
+                    options.UseSqlServer(Configuration.GetConnectionString(Name)));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
